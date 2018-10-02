@@ -1,0 +1,85 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Sat Aug 19 13:49:19 2017
+| Host         : Dear-pc running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MobileCharger_TOP_control_sets_placed.rpt
+| Design       : MobileCharger_TOP
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |           10 |
+| No           | No                    | Yes                    |              43 |           13 |
+| No           | Yes                   | No                     |              21 |            7 |
+| Yes          | No                    | No                     |               6 |            2 |
+| Yes          | No                    | Yes                    |              28 |            8 |
+| Yes          | Yes                   | No                     |               6 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+---------------------------------------------+--------------------------------------------+------------------+----------------+
+|             Clock Signal            |                Enable Signal                |              Set/Reset Signal              | Slice Load Count | Bel Load Count |
++-------------------------------------+---------------------------------------------+--------------------------------------------+------------------+----------------+
+|  FreqDiv/Freq_1kHz                  |                                             | rst_IBUF                                   |                1 |              2 |
+|  Keyboard/key_clk                   | Keyboard/keyboard_val0                      | rst_IBUF                                   |                2 |              4 |
+|  Keyboard/next_state_reg[3]_i_2_n_0 |                                             |                                            |                1 |              4 |
+|  Freq_250Hz_BUFG                    |                                             | rst_IBUF                                   |                2 |              4 |
+|  Freq_250Hz_BUFG                    |                                             | ControlCircuit/Shift/DPD/cnt[3]_i_1__0_n_0 |                1 |              4 |
+|  Freq_250Hz_BUFG                    | Keyboard/E[0]                               | ControlCircuit/TensTimer/slake_reg_0       |                1 |              4 |
+|  Keyboard/key_clk                   |                                             | rst_IBUF                                   |                1 |              5 |
+|  Freq_250Hz_BUFG                    | ControlCircuit/TimeCountDown/cnt            | ControlCircuit/CoreState/SR[0]             |                3 |              6 |
+|  Freq_250Hz_BUFG                    | ControlCircuit/CoreState/E[0]               |                                            |                2 |              6 |
+|  Freq_250Hz_BUFG                    |                                             | ControlCircuit/TensTimer/slake_reg_0       |                4 |              7 |
+|  Keyboard/key_clk                   | Keyboard/col[3]_i_1_n_0                     | rst_IBUF                                   |                2 |              8 |
+|  Freq_250Hz_BUFG                    |                                             | ControlCircuit/CoreState/SR[0]             |                2 |              8 |
+|  ControlCircuit/Shift/DPD/CLK       |                                             | ControlCircuit/PreKey/disp1_reg[1]         |                1 |              8 |
+|  Freq_250Hz_BUFG                    |                                             | ControlCircuit/Shift/PDS/SR[0]             |                4 |              9 |
+|  Freq_250Hz_BUFG                    | ControlCircuit/CoreState/cnt_reg_0__s_net_1 | ControlCircuit/TensTimer/slake_reg_0       |                3 |             12 |
+|  clk_100MHz_IBUF_BUFG               |                                             | rst_IBUF                                   |                4 |             17 |
+|  Freq_250Hz_BUFG                    |                                             |                                            |                9 |             18 |
++-------------------------------------+---------------------------------------------+--------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 4      |                     5 |
+| 5      |                     1 |
+| 6      |                     2 |
+| 7      |                     1 |
+| 8      |                     3 |
+| 9      |                     1 |
+| 12     |                     1 |
+| 16+    |                     2 |
++--------+-----------------------+
+
+

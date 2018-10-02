@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MobileCharger/MobileCharger.sim/sim_1/synth/timing/Keyboard_Driver_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keyboard_Driver
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MobileCharger/MobileCharger.srcs/sim_1/new/Keyboard_Driver_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Keyboard_Driver_tb

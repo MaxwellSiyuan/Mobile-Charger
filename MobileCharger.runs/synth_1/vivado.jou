@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Aug 19 13:47:53 2017
+# Process ID: 2016
+# Current directory: F:/VivadoProject/MobileCharger/MobileCharger.runs/synth_1
+# Command line: vivado.exe -log MobileCharger_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MobileCharger_TOP.tcl
+# Log file: F:/VivadoProject/MobileCharger/MobileCharger.runs/synth_1/MobileCharger_TOP.vds
+# Journal file: F:/VivadoProject/MobileCharger/MobileCharger.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MobileCharger_TOP.tcl -notrace

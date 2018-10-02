@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jun 01 20:31:45 2017
+# Process ID: 3240
+# Current directory: F:/VivadoProject/MobileCharger/MobileCharger.sim/sim_1/synth/timing
+# Command line: wbtcv.exe -mode batch -source F:/VivadoProject/MobileCharger/MobileCharger.sim/sim_1/synth/timing/xsim.dir/Keyboard_Driver_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: F:/VivadoProject/MobileCharger/MobileCharger.sim/sim_1/synth/timing/webtalk.log
+# Journal file: F:/VivadoProject/MobileCharger/MobileCharger.sim/sim_1/synth/timing\webtalk.jou
+#-----------------------------------------------------------
+source F:/VivadoProject/MobileCharger/MobileCharger.sim/sim_1/synth/timing/xsim.dir/Keyboard_Driver_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace

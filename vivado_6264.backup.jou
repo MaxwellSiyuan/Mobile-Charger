@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jun 01 10:50:41 2017
+# Process ID: 6264
+# Current directory: F:/VivadoProject/MobileCharger
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2544 F:\VivadoProject\MobileCharger\MobileCharger.xpr
+# Log file: F:/VivadoProject/MobileCharger/vivado.log
+# Journal file: F:/VivadoProject/MobileCharger\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VivadoProject/MobileCharger/MobileCharger.xpr
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ControlCircuit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ControlCircuit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+source ControlCircuit_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 50 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MobileCharger_TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+synth_design -rtl -name rtl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Keyboard_Driver [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Keyboard_Driver_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+current_design synth_1
+close_design
+launch_simulation -mode post-synthesis -type timing
+source Keyboard_Driver_tb.tcl
+run 50 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MobileCharger_TOP [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+current_sim simulation_1
+run 20 us
+run 20 us
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {F:/VivadoProject/MobileCharger/MobileCharger.runs/impl_1/MobileCharger_TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {F:/VivadoProject/MobileCharger/MobileCharger.runs/impl_1/MobileCharger_TOP.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+current_design rtl_1
+current_sim simulation_2
+close_sim
+close_sim
